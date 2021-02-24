@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let tElement of todos">
+        <app-todo-list-element [todoElement] = tElement></app-todo-list-element>
+    </li>
+</ul>
+{{ newTodo }}
+<form action="" (submit)="add()">
+    <input type="text" name="newTodo" [(ngModel)] = "newTodo">
+    <button>Add</button>
+</form>
